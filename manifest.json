@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "LoadBlock",
+  "description": "This extension allows for a more hastily accessible way of stopping the loading of a page",
+  "version": "1.3",
+
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [
+    {
+      "matches":["<all_urls>"],
+      "css":["button.css"],
+      "js": [ "myscript.js"]
+    }
+  ]
+}
